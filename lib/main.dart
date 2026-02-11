@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mad_lab/register_page.dart';
 import 'package:mad_lab/utility.dart';
 import 'package:mad_lab/configurations.dart';
-
+//JBJHB
 void main() {
   runApp(const MyApp());
 }
