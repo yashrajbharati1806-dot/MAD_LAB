@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mad_lab/Content.dart';
 import 'package:mad_lab/register_page.dart';
 import 'package:mad_lab/utility.dart';
+import 'package:mad_lab/product_list_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -196,7 +197,14 @@ class MyHomePage extends StatelessWidget {
                     return Content();
                   }));
                 },
-                child: const Text("content"))
+                child: const Text("content")),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+                    return ProductListPage();
+                  }));
+                },
+                child: const Text("View Products"))
           ],
         ),
       ),
